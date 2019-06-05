@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="UnZone.Controls.TimeCell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <Grid BackgroundColor="{StaticResource CellBackgroundColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="AUTO" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="AUTO" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView
+                Margin="10"
+                BackgroundColor="Orange"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="50" />
+
+            <StackLayout Grid.Column="1" VerticalOptions="Center">
+                <Label
+                    FontSize="20"
+                    Text="{Binding UserName}"
+                    TextColor="White" />
+                <Label
+                    Margin="0,-5,0,0"
+                    FontSize="12"
+                    Text="{Binding Location}"
+                    TextColor="White" />
+
+            </StackLayout>
+
+            <Label
+                Grid.Column="2"
+                Margin="0,0,20,0"
+                FontSize="Large"
+                Text="{Binding CurrentTime}"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <BoxView
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="{StaticResource PageBackgroundColor}"
+                HeightRequest="1"
+                VerticalOptions="End" />
+
+
+
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>

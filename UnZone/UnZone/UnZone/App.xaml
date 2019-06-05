@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="UnZone.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Application.Resources>
+        <!--  Colors  -->
+        <Color x:Key="DropDownColor2">#36476a</Color>
+        <Color x:Key="DropDownColor1">#41557e</Color>
+        <Color x:Key="NavigationBarColor">#f5775b</Color>
+        <Color x:Key="PageBackgroundColor">#3b4d72</Color>
+        <Color x:Key="CellBackgroundColor">#405175</Color>
+
+
+        <Style TargetType="Grid">
+            <Setter Property="RowSpacing" Value="0" />
+            <Setter Property="ColumnSpacing" Value="0" />
+        </Style>
+
+    </Application.Resources>
+</Application>
