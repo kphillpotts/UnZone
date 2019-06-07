@@ -112,11 +112,6 @@ namespace UnZone
             view.IsVisible = false;
         }
 
-
-        private async void BackgroundTapRecognizer_Tapped(object sender, EventArgs e)
-        {
-        }
-
         private async void DeleteTapRecognizer_Tapped(object sender, EventArgs e)
         {
             await CloseDropDown(InfoDropDown);

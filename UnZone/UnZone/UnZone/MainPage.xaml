@@ -52,10 +52,6 @@
             BackgroundColor="#CC000000"
             IsVisible="False"
             Opacity="0">
-            <AbsoluteLayout.GestureRecognizers>
-                <TapGestureRecognizer Tapped="BackgroundTapRecognizer_Tapped" />
-            </AbsoluteLayout.GestureRecognizers>
-
 
             <Grid x:Name="FrontSide" IsVisible="True">
                 <Grid.RowDefinitions>
