@@ -14,34 +14,38 @@
                 <ColumnDefinition Width="AUTO" />
             </Grid.ColumnDefinitions>
 
-            <BoxView
-                Margin="10"
-                BackgroundColor="Orange"
-                HeightRequest="50"
+            <Image
+                Margin="20"
+                HeightRequest="30"
                 HorizontalOptions="Center"
+                Source="sun.png"
                 VerticalOptions="Center"
-                WidthRequest="50" />
+                WidthRequest="30" />
+
 
             <StackLayout Grid.Column="1" VerticalOptions="Center">
-                <Label
-                    FontSize="20"
-                    Text="{Binding UserName}"
-                    TextColor="White" />
-                <Label
-                    Margin="0,-5,0,0"
-                    FontSize="12"
-                    Text="{Binding Location}"
-                    TextColor="White" />
-
+                <Label Style="{StaticResource NameLabelStyle}" Text="{Binding UserName}" />
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image Source="map_pin.png" />
+                    <Label Style="{StaticResource LocationLabelStyle}" Text="{Binding Location}" />
+                </StackLayout>
             </StackLayout>
 
-            <Label
+            <StackLayout
                 Grid.Column="2"
                 Margin="0,0,20,0"
-                FontSize="Large"
-                Text="{Binding CurrentTime}"
-                TextColor="White"
-                VerticalOptions="Center" />
+                Orientation="Horizontal">
+                <Label
+                    Style="{StaticResource TimeLabelStyle}"
+                    Text="{Binding CurrentTime}"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0,-14,0,0"
+                    Style="{StaticResource AmPmLabelStyle}"
+                    Text="AM"
+                    VerticalOptions="Center" />
+
+            </StackLayout>
 
             <BoxView
                 Grid.Column="0"

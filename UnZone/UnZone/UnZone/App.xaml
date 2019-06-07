@@ -13,12 +13,94 @@
         <Color x:Key="NavigationBarColor">#f5775b</Color>
         <Color x:Key="PageBackgroundColor">#3b4d72</Color>
         <Color x:Key="CellBackgroundColor">#405175</Color>
+        <Color x:Key="MainTextColor">#FFFFFF</Color>
+        <Color x:Key="YouTextColor">#B9B7C3</Color>
+        <Color x:Key="LocationTextColor">#818BA1</Color>
 
+        <!--  font families  -->
+        <OnPlatform x:Key="BoldFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="OpenSans-Bold.ttf#Open Sans" />
+            <On Platform="UWP" Value="/Assets/OpenSans-Bold.ttf#Open Sans" />
+            <On Platform="iOS" Value="OpenSans-Bold" />
+        </OnPlatform>
+        <OnPlatform x:Key="RegularFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="OpenSans-Regular.ttf#Open Sans" />
+            <On Platform="UWP" Value="/Assets/OpenSans-Regular.ttf#Open Sans" />
+            <On Platform="iOS" Value="OpenSans-Regular" />
+        </OnPlatform>
+        <OnPlatform x:Key="LightFont" x:TypeArguments="x:String">
+            <On Platform="Android" Value="OpenSans-Light.ttf#Open Sans" />
+            <On Platform="UWP" Value="/Assets/OpenSans-Light.ttf#Open Sans" />
+            <On Platform="iOS" Value="OpenSans-Light" />
+        </OnPlatform>
+
+        <Style x:Key="NameLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="{StaticResource MainTextColor}" />
+        </Style>
+
+
+        <Style x:Key="YouNameLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="TextColor" Value="{StaticResource YouTextColor}" />
+        </Style>
+
+        <Style x:Key="TimeLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldFont}" />
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="TextColor" Value="{StaticResource MainTextColor}" />
+        </Style>
+
+        <Style x:Key="YouTimeLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldFont}" />
+            <Setter Property="FontSize" Value="70" />
+            <Setter Property="TextColor" Value="{StaticResource YouTextColor}" />
+        </Style>
+
+        <Style x:Key="LocationLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextColor" Value="{StaticResource LocationTextColor}" />
+        </Style>
+
+        <Style x:Key="AmPmLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldFont}" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextColor" Value="{StaticResource MainTextColor}" />
+        </Style>
+
+        <Style x:Key="YouAmPmLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource BoldFont}" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="{StaticResource YouTextColor}" />
+        </Style>
+
+        <Style x:Key="PopupLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="{StaticResource MainTextColor}" />
+        </Style>
+
+        <Style x:Key="InfoLabelStyle" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="{StaticResource MainTextColor}" />
+        </Style>
+
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#F5775B" />
+            <Setter Property="BarTextColor" Value="White" />
+        </Style>
 
         <Style TargetType="Grid">
             <Setter Property="RowSpacing" Value="0" />
             <Setter Property="ColumnSpacing" Value="0" />
         </Style>
+
+
+
 
     </Application.Resources>
 </Application>

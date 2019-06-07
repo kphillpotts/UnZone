@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="UnZone.Controls.YouTimeCell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <Grid BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="AUTO" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="AUTO" />
+            </Grid.ColumnDefinitions>
+
+            <Image
+                Margin="20"
+                HeightRequest="30"
+                HorizontalOptions="Center"
+                Source="sun.png"
+                VerticalOptions="Center"
+                WidthRequest="30" />
+
+
+            <Label
+                Grid.Column="1"
+                Style="{StaticResource YouNameLabelStyle}"
+                Text="You"
+                VerticalOptions="Center" />
+
+            <StackLayout
+                Grid.Column="2"
+                Margin="0,0,20,0"
+                Orientation="Horizontal">
+                <Label
+                    Style="{StaticResource YouTimeLabelStyle}"
+                    Text="{Binding CurrentTime}"
+                    VerticalOptions="Center" />
+                <Label
+                    Margin="0,-30,0,0"
+                    Style="{StaticResource YouAmPmLabelStyle}"
+                    Text="AM"
+                    VerticalOptions="Center" />
+            </StackLayout>
+
+
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>

@@ -130,7 +130,15 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="close.png" />
+    <Content Include="delete.png" />
+    <Content Include="edit.png" />
+    <Content Include="map_pin.png" />
+    <Content Include="moon.png" />
+    <Content Include="no.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="sun.png" />
+    <Content Include="yes.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -144,7 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +160,15 @@
       <Project>{53A8D0BD-A54B-4422-8B5C-783B57CB55A4}</Project>
       <Name>UnZone</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\OpenSans-Light.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\OpenSans-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\OpenSans-Bold.ttf" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

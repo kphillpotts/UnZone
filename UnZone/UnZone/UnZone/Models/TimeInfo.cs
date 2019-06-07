@@ -11,6 +11,7 @@ namespace UnZone.Models
         private string location;
         private string timeZoneId;
         private string currentTime;
+        private TimeInfoTypeEnum timeInfoType;
 
         public string UserName
         {
@@ -20,7 +21,7 @@ namespace UnZone.Models
 
         public string Location
         {
-            get => location;
+            get => location.ToUpper();
             set => SetProperty(ref location, value);
         }
 
@@ -34,6 +35,19 @@ namespace UnZone.Models
         {
             get => currentTime;
             set => SetProperty(ref currentTime, value);
+        }
+
+        public TimeInfoTypeEnum TimeInfoType
+        {
+            get => timeInfoType;
+            set => SetProperty(ref timeInfoType, value);
+        }
+
+        public enum TimeInfoTypeEnum
+        { 
+            Person,
+            Location,
+            You
         }
 
 

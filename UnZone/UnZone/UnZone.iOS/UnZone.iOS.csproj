@@ -69,6 +69,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\OpenSans-Light.ttf" />
+    <BundleResource Include="Resources\OpenSans-Regular.ttf" />
+    <BundleResource Include="Resources\OpenSans-Bold.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -133,5 +136,77 @@
       <Project>{53A8D0BD-A54B-4422-8B5C-783B57CB55A4}</Project>
       <Name>UnZone</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\close%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\close%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\delete%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\delete%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\edit%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\edit%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\map_pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\map_pin%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\map_pin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\no%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\no%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yes%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yes%403x.png" />
   </ItemGroup>
 </Project>
