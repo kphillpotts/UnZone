@@ -142,10 +142,9 @@
                     BackgroundColor="{StaticResource DropDownColor2}"
                     HeightRequest="80">
                     <Label
-                        x:Name="TimeZoneLabel"
                         HorizontalOptions="Center"
                         Style="{StaticResource InfoLabelStyle}"
-                        Text="TimeZoneInfo"
+                        Text="{Binding TimeZoneId}"
                         VerticalOptions="Center" />
                 </Grid>
 

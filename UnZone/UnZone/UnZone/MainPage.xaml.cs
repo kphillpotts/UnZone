@@ -36,11 +36,10 @@ namespace UnZone
             selectedElement = (TimeCell)sender;
             selectedIndex = ViewStack.Children.IndexOf(selectedElement);
 
-            FakeCell.BindingContext = selectedElement.BindingContext;
-
-            //TODO: Fix this disaster up
-            TimeInfo data = (TimeInfo)selectedElement.BindingContext;
-            TimeZoneLabel.Text = data.TimeZoneId;
+            // set the binding context to the panel
+            // so that it can be inherited by the FakeCell and
+            // any other controls required on the popup.
+            FrontSide.BindingContext = selectedElement.BindingContext;
 
             // position the drop downs
             PositionDropDown(selectedElement, FrontSide);
