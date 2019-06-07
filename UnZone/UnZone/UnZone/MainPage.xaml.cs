@@ -27,11 +27,6 @@ namespace UnZone
         int selectedIndex;
         private async void TimeCellTapRecognizer_Tapped(object sender, EventArgs e)
         {
-            // fade in the overlay
-            FadeBackground.Opacity = 0;
-            FadeBackground.IsVisible = true;
-            _ = FadeBackground.FadeTo(1, animationSpeed);
-
             // get the cell that was tapped
             selectedElement = (TimeCell)sender;
             selectedIndex = ViewStack.Children.IndexOf(selectedElement);
@@ -44,6 +39,11 @@ namespace UnZone
             // position the drop downs
             PositionDropDown(selectedElement, FrontSide);
             PositionDropDown(selectedElement, BackSide);
+
+            // fade in the overlay
+            FadeBackground.Opacity = 0;
+            FadeBackground.IsVisible = true;
+            _ = FadeBackground.FadeTo(1, animationSpeed);
 
             // position the close button
             var padding = 40;
