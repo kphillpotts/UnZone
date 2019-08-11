@@ -9,7 +9,7 @@ This UI Challenge is based on the fantastic dribble designs by [Rick Waalders](h
 If you are so inclined you can watch me code this live, which is what I do on [my Twitch channel](https://twitch.tv/kymphillpotts). I have uploaded the recordings of the relevant sessions over to Youtube:
 
 ### Session 1
-[![Session 1](https://img.youtube.com/vi/fMtJANU0e20/0.jpg)](https://www.youtube.com/watch?v=fMtJANU0e20)
+[![Session 1](https://img.youtube.com/vi/J7UBWGPt3U0/0.jpg)](https://www.youtube.com/watch?v=J7UBWGPt3U0)
 
 ### Session 2
 [![Session 1](https://img.youtube.com/vi/n6oEFvoAZ3k/0.jpg)](https://www.youtube.com/watch?v=n6oEFvoAZ3k)
